@@ -1,0 +1,20 @@
+{
+  "categoria": [
+    {
+      "nome": "FRUTA",
+      "imagem": "@drawable/fruta"
+    },
+    {
+      "nome": "CESTA DE FRUTA",
+      "imagem": "@drawable/cesta_de_fruta"
+    },
+    {
+      "nome": "CHÁ",
+      "imagem": "@drawable/cha"
+    },
+    {
+      "nome": "LEGUMES",
+      "imagem": "@drawable/legumes"
+    }
+  ]
+}
