@@ -17,5 +17,4 @@
         android:id="@+id/menu_bottom_navigation_perfil"
         android:icon="@drawable/ic_bottom_navigation_perfil_laranja_24dp"
         android:title="perfil" />
-
 </menu>
