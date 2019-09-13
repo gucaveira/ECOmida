@@ -9,9 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".ui.activity.EnderecoActivity"></activity>
         <activity
             android:name=".model.BottomNagation"
-            android:label="@string/title_activity_bottom_nagation"></activity>
+            android:label="@string/title_activity_bottom_nagation" />
         <activity android:name=".ui.activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

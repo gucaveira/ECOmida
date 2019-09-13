@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackgroundTela"
+    tools:context=".ui.activity.EnderecoActivity">
+
+    <Button
+        android:id="@+id/Endereco_btnFinalizar"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBotao"
+        android:text="Finalizar"
+        android:textColor="@color/ColorTextButton"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Endereco_edtEstado" />
+
+    <EditText
+        android:id="@+id/Endereco_edtRua"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Rua"
+        android:inputType="textPostalAddress"
+        android:textColorHint="@color/colroTextlabel"
+        app:layout_constraintEnd_toEndOf="@+id/Enreco_edtCEP"
+        app:layout_constraintStart_toStartOf="@+id/Enreco_edtCEP"
+        app:layout_constraintTop_toBottomOf="@+id/Enreco_edtCEP" />
+
+    <EditText
+        android:id="@+id/Endereco_edtComplemento"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Complemento"
+        android:inputType="textPostalAddress"
+        android:textColorHint="@color/colroTextlabel"
+        app:layout_constraintEnd_toEndOf="@+id/Endereco_edtNumero"
+        app:layout_constraintStart_toStartOf="@+id/Endereco_edtNumero"
+        app:layout_constraintTop_toBottomOf="@+id/Endereco_edtNumero" />
+
+    <EditText
+        android:id="@+id/Endereco_edtNumero"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Número"
+        android:inputType="number"
+        android:textColorHint="@color/colroTextlabel"
+        app:layout_constraintEnd_toEndOf="@+id/Endereco_edtRua"
+        app:layout_constraintStart_toStartOf="@+id/Endereco_edtRua"
+        app:layout_constraintTop_toBottomOf="@+id/Endereco_edtRua" />
+
+    <EditText
+        android:id="@+id/Endereco_edtBairro"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Bairro"
+        android:inputType="textPostalAddress"
+        android:textColorHint="@color/colroTextlabel"
+        app:layout_constraintEnd_toEndOf="@+id/Endereco_edtComplemento"
+        app:layout_constraintStart_toStartOf="@+id/Endereco_edtComplemento"
+        app:layout_constraintTop_toBottomOf="@+id/Endereco_edtComplemento" />
+
+    <EditText
+        android:id="@+id/Endereco_edtCidade"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Cidade"
+        android:inputType="textPostalAddress"
+        android:textColorHint="@color/colroTextlabel"
+        app:layout_constraintEnd_toEndOf="@+id/Endereco_edtBairro"
+        app:layout_constraintStart_toStartOf="@+id/Endereco_edtBairro"
+        app:layout_constraintTop_toBottomOf="@+id/Endereco_edtBairro" />
+
+    <EditText
+        android:id="@+id/Endereco_edtEstado"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Estado"
+        android:inputType="textPostalAddress"
+        android:textColorHint="@color/colroTextlabel"
+        app:layout_constraintEnd_toEndOf="@+id/Endereco_edtCidade"
+        app:layout_constraintStart_toStartOf="@+id/Endereco_edtCidade"
+        app:layout_constraintTop_toBottomOf="@+id/Endereco_edtCidade" />
+
+    <EditText
+        android:id="@+id/Enreco_edtCEP"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:ems="10"
+        android:hint="CEP"
+        android:inputType="number"
+        android:selectAllOnFocus="true"
+        android:textColor="@color/colorBodyText"
+        android:textColorHint="@color/colroTextlabel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Endereco_txvEndereco" />
+
+    <TextView
+        android:id="@+id/Endereco_txvEndereco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Endereço"
+        android:textColor="@color/colorBodyText"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>
