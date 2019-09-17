@@ -20,34 +20,17 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_endereco);
+        setContentView(R.layout.activity_main);
 
-       //bottomNagation =  findViewById(R.id.navigationView);
+        //bottomNagation =  findViewById(R.id.navigationView);
 
-//        ArrayList<CategoriaCardModel> categorias = new ArrayList<>();
-//        ListaCategoriaAdapter adapter = new ListaCategoriaAdapter(this, categorias);
-//
-//        RecyclerView recyclerView = findViewById(R.id.recycler_view);
-//        recyclerView.setLayoutManager( new LinearLayoutManager(
-//                this, LinearLayoutManager.HORIZONTAL, false));
-//
-//        recyclerView.setAdapter(adapter);
-//
-//        for (int i = 0; i <10; i++){
-//            categorias.add( new CategoriaCardModel(R.drawable.fruta, "TEst" + i));
-//            adapter.notifyDataSetChanged();
-//        } ArrayList<CategoriaCardModel> categorias = new ArrayList<>();
-//        ListaCategoriaAdapter adapter = new ListaCategoriaAdapter(this, categorias);
-//
-//        RecyclerView recyclerView = findViewById(R.id.recycler_view);
-//        recyclerView.setLayoutManager( new LinearLayoutManager(
-//                this, LinearLayoutManager.HORIZONTAL, false));
-//
-//        recyclerView.setAdapter(adapter);
-//
-//        for (int i = 0; i <10; i++){
-//            categorias.add( new CategoriaCardModel(R.drawable.fruta, "TEst" + i));
-//            adapter.notifyDataSetChanged();
-//        }
+        ArrayList<CategoriaCardModel> categorias = new ArrayList<>();
+        ListaCategoriaAdapter adapter = new ListaCategoriaAdapter(this, categorias);
+
+        RecyclerView recyclerView = findViewById(R.id.recycler_view);
+        recyclerView.setLayoutManager( new LinearLayoutManager(
+                this, LinearLayoutManager.HORIZONTAL, false));
+
+        recyclerView.setAdapter(adapter);
     }
 }
