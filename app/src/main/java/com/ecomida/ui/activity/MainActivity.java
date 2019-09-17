@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //bottomNagation =  findViewById(R.id.navigationView);
+        bottomNagation =  findViewById(R.id.navigationView);
 
         ArrayList<CategoriaCardModel> categorias = new ArrayList<>();
         ListaCategoriaAdapter adapter = new ListaCategoriaAdapter(this, categorias);
@@ -32,5 +32,10 @@ public class MainActivity extends AppCompatActivity {
                 this, LinearLayoutManager.HORIZONTAL, false));
 
         recyclerView.setAdapter(adapter);
+
+        for (int i = 0; i <10; i++){
+            categorias.add( new CategoriaCardModel(R.drawable.fruta, "TEst" + i));
+            adapter.notifyDataSetChanged();
+        }
     }
 }
