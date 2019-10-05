@@ -8,7 +8,7 @@
     tools:context=".PerfilActivity">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imUsuario"
         android:layout_width="64dp"
         android:layout_height="64dp"
         android:layout_marginStart="16dp"
@@ -18,7 +18,7 @@
         tools:srcCompat="@tools:sample/avatars[3]" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/txvUsuario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -26,6 +26,240 @@
         android:text="Usuario"
         android:textColor="@color/colorBodyText"
         android:textSize="32sp"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
-        app:layout_constraintTop_toTopOf="@+id/imageView" />
+        app:layout_constraintStart_toEndOf="@+id/imUsuario"
+        app:layout_constraintTop_toTopOf="@+id/imUsuario" />
+
+    <ImageView
+        android:id="@+id/imFavorito"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imUsuario"
+        app:srcCompat="@drawable/favorito" />
+
+    <ImageView
+        android:id="@+id/imCupom"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imFavorito"
+        app:srcCompat="@drawable/cupom" />
+
+    <ImageView
+        android:id="@+id/imPagamento"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imCupom"
+        app:srcCompat="@drawable/pagamento" />
+
+    <ImageView
+        android:id="@+id/imAviso"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imPagamento"
+        app:srcCompat="@drawable/aviso" />
+
+    <ImageView
+        android:id="@+id/imConfiguracao"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imAviso"
+        app:srcCompat="@drawable/config" />
+
+    <ImageView
+        android:id="@+id/imLocal"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imConfiguracao"
+        app:srcCompat="@drawable/local" />
+
+    <ImageView
+        android:id="@+id/imAjuda"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imLocal"
+        app:srcCompat="@drawable/ajuda" />
+
+    <ImageView
+        android:id="@+id/imParceiro"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imAjuda"
+        app:srcCompat="@drawable/parceiro" />
+
+    <TextView
+        android:id="@+id/txvFavorito"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="Favorito"
+        android:textColor="@color/colorBodyText"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/imFavorito"
+        app:layout_constraintTop_toTopOf="@+id/imFavorito" />
+
+    <TextView
+        android:id="@+id/txvCupom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="Cupom"
+        android:textColor="@color/colorBodyText"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/imCupom"
+        app:layout_constraintTop_toTopOf="@+id/imCupom" />
+
+    <TextView
+        android:id="@+id/txvPagamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="Pagamento"
+        android:textColor="@color/colorBodyText"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/imPagamento"
+        app:layout_constraintTop_toTopOf="@+id/imPagamento" />
+
+    <TextView
+        android:id="@+id/txvAviso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="Aviso"
+        android:textColor="@color/colorBodyText"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/imAviso"
+        app:layout_constraintTop_toTopOf="@+id/imAviso" />
+
+    <TextView
+        android:id="@+id/txvConfiguracao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="33dp"
+        android:layout_marginTop="8dp"
+        android:text="Configuração"
+        android:textColor="@color/colorBodyText"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/imConfiguracao"
+        app:layout_constraintTop_toTopOf="@+id/imConfiguracao" />
+
+    <TextView
+        android:id="@+id/txvLocal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="Local"
+        android:textColor="@color/colorBodyText"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/imLocal"
+        app:layout_constraintTop_toTopOf="@+id/imLocal" />
+
+    <TextView
+        android:id="@+id/txvAjuda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="Ajuda"
+        android:textColor="@color/colorBodyText"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/imAjuda"
+        app:layout_constraintTop_toTopOf="@+id/imAjuda" />
+
+    <TextView
+        android:id="@+id/txvParceiros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="Seja nosso parceiro"
+        android:textColor="@color/colorBodyText"
+        android:textSize="24sp"
+        app:layout_constraintStart_toEndOf="@+id/imParceiro"
+        app:layout_constraintTop_toTopOf="@+id/imParceiro" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="wrap_content"
+        android:layout_height="1px"
+        android:layout_marginTop="8dp"
+        android:background="@color/colorBodyText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imFavorito" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="wrap_content"
+        android:layout_height="1px"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imCupom" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="wrap_content"
+        android:layout_height="1px"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imPagamento" />
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="wrap_content"
+        android:layout_height="1px"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imAviso" />
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="wrap_content"
+        android:layout_height="1px"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imConfiguracao" />
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="wrap_content"
+        android:layout_height="1px"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imLocal" />
+
+    <View
+        android:id="@+id/view7"
+        android:layout_width="wrap_content"
+        android:layout_height="1px"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imAjuda" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
