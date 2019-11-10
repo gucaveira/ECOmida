@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/colorBackgroundTela"
-    tools:context=".PerfilActivity">
+    tools:context=".ui.activity.PerfilActivity">
 
     <ImageView
         android:id="@+id/imUsuario"

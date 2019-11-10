@@ -2,6 +2,7 @@
     <string name="app_name">ECOmida</string>
     <string name="title_activity_bottom_nagation">BottomNagation</string>
     <string name="title_home">Home</string>
-    <string name="title_dashboard">Dashboard</string>
-    <string name="title_notifications">Notifications</string>
+    <string name="title_buscar">Buscar</string>
+    <string name="title_pedido">Pedidos</string>
+    <string name="title_perfil">perfil</string>
 </resources>

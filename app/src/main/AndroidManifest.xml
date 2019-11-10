@@ -11,10 +11,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".PerfilActivity"></activity>
+        <activity android:name=".ui.activity.PerfilActivity"></activity>
         <activity android:name=".ui.activity.EnderecoActivity"></activity>
-        <activity
-            android:name=".model.BottomNagation"
+        <activity android:name=".model.BottomNagation"
             android:label="@string/title_activity_bottom_nagation"></activity>
         <activity android:name=".ui.activity.MainActivity">
             <intent-filter>

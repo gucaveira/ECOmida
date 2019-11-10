@@ -1,16 +1,16 @@
-package com.ecomida.ui.home;
+package com.ecomida.ui.fragmento.pedidos;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class HomeViewModel extends ViewModel {
+public class PedidoViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public HomeViewModel() {
+    public PedidoViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is home fragment");
+        mText.setValue("This is pedido fragment");
     }
 
     public LiveData<String> getText() {

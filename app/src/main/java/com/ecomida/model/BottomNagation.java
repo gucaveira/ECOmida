@@ -27,7 +27,7 @@ public class BottomNagation extends AppCompatActivity implements
         // menu should be considered as top level destinations.
 
         AppBarConfiguration appBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications)
+                R.id.navigation_home, R.id.navigation_buscar, R.id.navigation_pedido)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment);
         NavigationUI.setupActionBarWithNavController(this, navController, appBarConfiguration);
@@ -37,17 +37,17 @@ public class BottomNagation extends AppCompatActivity implements
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
         switch (menuItem.getItemId()){
-            case R.id.menu_bottom_navigation_home:{
+            case R.id.navigation_home:{
 
                 break;
             }
-            case R.id.menu_bottom_navigation_busca:{
+            case R.id.navigation_buscar:{
                 break;
             }
-            case R.id.menu_bottom_navigation_pedido:{
+            case R.id.navigation_pedido:{
                 break;
             }
-            case R.id.menu_bottom_navigation_perfil:{
+            case R.id.navigation_perfil:{
                 break;
             }
         }

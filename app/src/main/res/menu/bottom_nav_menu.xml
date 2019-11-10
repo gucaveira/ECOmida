@@ -2,19 +2,19 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/menu_bottom_navigation_home"
+        android:id="@+id/navigation_home"
         android:icon="@drawable/ic_bottom_navigation_home_laranja_24dp"
         android:title="home" />
     <item
-        android:id="@+id/menu_bottom_navigation_busca"
+        android:id="@+id/navigation_buscar"
         android:icon="@drawable/ic_bottom_navigation_busca_laranja_24dp"
         android:title="busca" />
     <item
-        android:id="@+id/menu_bottom_navigation_pedido"
+        android:id="@+id/navigation_pedido"
         android:icon="@drawable/ic_bottom_navigation_pedido_laranja_24dp"
         android:title="pedido" />
     <item
-        android:id="@+id/menu_bottom_navigation_perfil"
+        android:id="@+id/navigation_perfil"
         android:icon="@drawable/ic_bottom_navigation_perfil_laranja_24dp"
         android:title="perfil" />
 </menu>

@@ -1,8 +1,10 @@
-package com.ecomida;
+package com.ecomida.ui.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.ecomida.R;
 
 public class PerfilActivity extends AppCompatActivity {
 

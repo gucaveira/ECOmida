@@ -31,7 +31,6 @@ public class ListaCategoriaAdapter extends RecyclerView.Adapter<ListaCategoriaAd
         return new ListaCategoriaViewHolder
                 (LayoutInflater.from(context)
                         .inflate(R.layout.categoria_cardview, parent, false));
-
     }
 
     @Override

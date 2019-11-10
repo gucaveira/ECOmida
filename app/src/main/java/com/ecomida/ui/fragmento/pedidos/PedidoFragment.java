@@ -1,4 +1,4 @@
-package com.ecomida.ui.dashboard;
+package com.ecomida.ui.fragmento.pedidos;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -14,17 +14,17 @@ import androidx.lifecycle.ViewModelProviders;
 
 import com.ecomida.R;
 
-public class DashboardFragment extends Fragment {
+public class PedidoFragment extends Fragment {
 
-    private DashboardViewModel dashboardViewModel;
+    private PedidoViewModel pedidoViewModel;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        dashboardViewModel =
-                ViewModelProviders.of(this).get(DashboardViewModel.class);
-        View root = inflater.inflate(R.layout.fragment_dashboard, container, false);
-        final TextView textView = root.findViewById(R.id.text_dashboard);
-        dashboardViewModel.getText().observe(this, new Observer<String>() {
+        pedidoViewModel =
+                ViewModelProviders.of(this).get(PedidoViewModel.class);
+        View root = inflater.inflate(R.layout.fragment_pedido, container, false);
+        final TextView textView = root.findViewById(R.id.text_pedido);
+        pedidoViewModel.getText().observe(this, new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);
